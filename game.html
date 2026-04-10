@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <header>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__item__link" href="/index.html">Home</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__item__link" href="/game.html">Game</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__item__link" href="/weather.html">Weather</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+    <section class="calculator" data-category="numerical">
+        <div class="line"></div>
+        <h2 class="calculator__title">Калькулятор</h2>
+        <form class="calculator__form" id="calculator-form">
+            <input class="calculator__form__input" id="calculator-form-one-input" type="text" placeholder="Введіть число">
+            <ul class="calculator__form__list">
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="addition"
+                            id="calculator-form-addition" />
+                        <p class="calculator__form__item__text" id="calculator-form-addition-text">+</p>
+                    </label>
+                </li>
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="multiplication"
+                            id="calculator-form-multiplication" />
+                        <p class="calculator__form__item__text" id="calculator-form-multiplication-text">*</p>
+                    </label>
+                </li>
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="subtraction"
+                            id="calculator-form-subtraction" />
+                        <p class="calculator__form__item__text" id="calculator-form-subtraction-text">-</p>
+                    </label>
+                </li>
+                <li class="calculator__form__item">
+                    <label class="calculator__form__item__label">
+                        <input class="calculator__form__item__input" type="radio" name="radio" value="division"
+                            id="calculator-form-division" />
+                        <p class="calculator__form__item__text" id="calculator-form-division-text">/</p>
+                    </label>
+                </li>
+            </ul>
+            <input class="calculator__form__input" id="calculator-form-two-input" type="text" placeholder="Введіть число">
+            <button class="calculator__form__btn">=</button>
+            <input class="calculator__form__input" type="text" placeholder="Результат" id="calculator-form-result">
+        </form>
+    </section>
+    
+    <section class="guess__number" data-category="numerical">
+        <div class="line"></div>
+        <h2 class="guess__title">Вгадай число, яке загадав комп’ютер</h2>
+        <div class="guess__form__container">
+            <form class="guess__form" id="form-guess">
+                <input type="text" id="guessInput" class="guess__input" placeholder="Введіть число">
+                <button type="submit" class="guess__btn">
+                    <!-- <img src="/img/svg/header/deandruff.svg" alt="" class="guess__img"> -->
+                </button>
+            </form>
+            <p class="guess__result"></p>
+        </div>
+    </section>
+
+
+        <footer>
+            <p>Lorem ipsum dolor sit.</p>
+        </footer>
+    <script type="module" src="./js/game.js"></script>
+</body>
+</html>
