@@ -1,7 +1,5 @@
 import { getWeather } from '../../api/get-weather.js';
 
-console.log(1768178);
-
 const form = document.querySelector('#weather-form');
 const resultContainer = document.querySelector('#weather-result');
 
